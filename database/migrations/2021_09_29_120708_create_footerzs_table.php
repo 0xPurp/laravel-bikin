@@ -49,8 +49,12 @@ class CreateFooterzsTable extends Migration
             $table->string('btnnews');
 
             // Copyright & Designed By 
-            $table->string('copyright');
-            $table->string('designed');
+            $table->string('copyright1');
+            $table->string('copyright2');
+            $table->string('copyright3');
+            $table->string('designed1');
+            $table->string('designed2');
+            $table->string('designedlink');
             $table->timestamps();
         });
     }
