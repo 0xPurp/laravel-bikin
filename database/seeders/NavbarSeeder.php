@@ -15,7 +15,14 @@ class NavbarSeeder extends Seeder
     public function run()
     {
         DB::table('navbars')->insert([
-            
+            'nomsite' => 'Bikin',
+            'btnhome' => 'Home',
+            'btnabout' => 'About',
+            'btnservices' => 'Services',
+            'btnportfolio' => 'Portfolio',
+            'btnteam' => 'Team',
+            'btncontact' => 'Contact',
+            'btngetstarted' => 'Get Started',
         ]);
     }
 }
