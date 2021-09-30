@@ -3,21 +3,19 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Team</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>{{ $data5->titre }}</h2>
+            <p>{{ $data5->sous_titre }}</p>
         </div>
 
         <div class="row">
 
             <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
-                    <img src="{{ asset('assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ $data5->photocrew1 }}" class="img-fluid" alt="">
                     <div class="member-info">
                         <div class="member-info-content">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
+                            <h4>{{ $data5->nomcrew1 }}</h4>
+                            <span>{{ $data5->postecrew1 }}</span>
                         </div>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
@@ -31,11 +29,11 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="member">
-                    <img src="{{ asset('assets/img/team/team-2.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ $data5->photocrew2 }}" class="img-fluid" alt="">
                     <div class="member-info">
                         <div class="member-info-content">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
+                            <h4>{{ $data5->nomcrew2 }}</h4>
+                            <span>{{ $data5->postecrew2 }}</span>
                         </div>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
@@ -49,11 +47,11 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="member">
-                    <img src="{{ asset('assets/img/team/team-3.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ $data5->photocrew3 }}" class="img-fluid" alt="">
                     <div class="member-info">
                         <div class="member-info-content">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
+                            <h4>{{ $data5->nomcrew3 }}</h4>
+                            <span>{{ $data5->postecrew3 }}</span>
                         </div>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
@@ -67,11 +65,11 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="member">
-                    <img src="{{ asset('assets/img/team/team-4.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ $data5->photocrew4 }}" class="img-fluid" alt="">
                     <div class="member-info">
                         <div class="member-info-content">
-                            <h4>Amanda Jepson</h4>
-                            <span>Accountant</span>
+                            <h4>{{ $data5->nomcrew4 }}</h4>
+                            <span>{{ $data5->postecrew4 }}</span>
                         </div>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>

@@ -3,10 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Contact</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>{{ $data8->titre }}</h2>
+            <p>{{ $data8->sous_titre }}</p>
         </div>
 
         <div class="row">
@@ -17,22 +15,22 @@
                     <div class="col-md-12">
                         <div class="info-box">
                             <i class="bx bx-map"></i>
-                            <h3>Our Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <h3>{{ $data8->titreadresse }}</h3>
+                            <p>{{ $data8->adresse }}</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="info-box mt-4">
                             <i class="bx bx-envelope"></i>
-                            <h3>Email Us</h3>
-                            <p>info@example.com<br>contact@example.com</p>
+                            <h3>{{ $data8->titremail }}</h3>
+                            <p>{{ $data8->mail1 }}<br>{{ $data8->mail2 }}</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="info-box mt-4">
                             <i class="bx bx-phone-call"></i>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                            <h3>{{ $data8->titrephone }}</h3>
+                            <p>{{ $data8->phone1 }}<br>{{ $data8->phone2 }}</p>
                         </div>
                     </div>
                 </div>

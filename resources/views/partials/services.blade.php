@@ -3,10 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Services</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>{{ $data7->titre }}</h2>
+            <p>{{ $data7->soustitre }}</p>
         </div>
 
         <div class="row">
@@ -14,9 +12,8 @@
                 data-aos-delay="100">
                 <div class="icon-box">
                     <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                        excepturi</p>
+                    <h4 class="title"><a href="">{{ $data7->titrecard1 }}</a></h4>
+                    <p class="description">{{ $data7->descriptioncard1 }}</p>
                 </div>
             </div>
 
@@ -24,9 +21,8 @@
                 data-aos-delay="200">
                 <div class="icon-box">
                     <div class="icon"><i class="bx bx-file"></i></div>
-                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore</p>
+                    <h4 class="title"><a href="">{{ $data7->titrecard2 }}</a></h4>
+                    <p class="description">{{ $data7->descriptioncard2 }}</p>
                 </div>
             </div>
 
@@ -34,9 +30,8 @@
                 data-aos-delay="300">
                 <div class="icon-box">
                     <div class="icon"><i class="bx bx-tachometer"></i></div>
-                    <h4 class="title"><a href="">Magni Dolores</a></h4>
-                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia</p>
+                    <h4 class="title"><a href="">{{ $data7->titrecard3 }}</a></h4>
+                    <p class="description">{{ $data7->descriptioncard3 }}</p>
                 </div>
             </div>
 
@@ -44,13 +39,13 @@
                 data-aos-delay="400">
                 <div class="icon-box">
                     <div class="icon"><i class="bx bx-layer"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                        blanditiis</p>
+                    <h4 class="title"><a href="">{{ $data7->titrecard4 }}</a></h4>
+                    <p class="description">{{ $data7->descriptioncard4 }}</p>
                 </div>
             </div>
 
         </div>
 
     </div>
-</section><!-- End Services Section -->
+</section>
+<!-- End Services Section -->
