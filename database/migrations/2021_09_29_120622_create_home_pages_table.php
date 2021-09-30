@@ -17,11 +17,12 @@ class CreateHomePagesTable extends Migration
             $table->id();
             // Page D'acceuille
             $table->string('titrehomepage');
-            $table->string('sous-titrehomepage');
+            $table->string('sous_titrehomepage');
             $table->string('btnstart');
+            $table->string('imghomepage');
             // About
             $table->string('titreabout');
-            $table->string('sous-titreabout');
+            $table->string('sous_titreabout');
             $table->string('btnabout');
 
             // Cards About

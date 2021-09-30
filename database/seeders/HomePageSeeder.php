@@ -18,10 +18,11 @@ class HomePageSeeder extends Seeder
         DB::table('home_pages')->insert([
             [
                 "titrehomepage" => "Build Better Websites With Bikin",
-                "sous-titrehomepage" => "We are team of talented designers making websites with Bootstrap",
+                "sous_titrehomepage" => "We are team of talented designers making websites with Bootstrap",
                 "btnstart" => "Get Started",
+                "imghomepage" => "http://127.0.0.1:8000/assets/img/hero-img.png" ,
                 "titreabout" => "Voluptatem dignissimos provident quasi",
-                "sous-titreabout" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
+                "sous_titreabout" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
                 "btnabout" => "About us",
                 "titrecard1" => "Corporis voluptates sit",
                 "descriptioncard1" => "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
