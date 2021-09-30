@@ -1,95 +1,69 @@
 <!-- ======= Features Section ======= -->
 <section id="features" class="features" data-aos="fade-up">
     <div class="container">
-
         <div class="section-title">
-            <h2>Features</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>{{ $data3->titrefeatures }}</h2>
+            <p>{{ $data3->soustitrefeatures }}</p>
         </div>
-
         <div class="row content">
             <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-                <img src="{{ asset('assets/img/features-1.png') }}" class="img-fluid" alt="">
+                <img src="{{ $data3->imgfeature1 }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <h3>{{ $data3->titrefeature1 }}</h3>
                 <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore
-                    magna aliqua.
+                    {{ $data3->descriptionfeature1 }}
                 </p>
                 <ul>
-                    <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <li><i class="bi bi-check"></i> {{ $data3->item1feature1 }}
                     </li>
-                    <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate
-                        velit.</li>
-                    <li><i class="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>
+                    <li><i class="bi bi-check"></i>{{ $data3->item2feature1 }}</li>
+                    <li><i class="bi bi-check"></i>{{ $data3->item3feature1 }}</li>
                 </ul>
             </div>
         </div>
-
         <div class="row content">
             <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-                <img src="{{ asset('assets/img/features-2.png') }}" class="img-fluid" alt="">
+                <img src="{{ $data3->imgfeature2 }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-                <h3>Corporis temporibus maiores provident</h3>
+                <h3>{{ $data3->titrefeature2 }}</h3>
                 <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore
-                    magna aliqua.
+                    {{ $data3->descriptionfeature2 }}
                 </p>
                 <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
+                    {{ $data3->textfeature2 }}
                 </p>
             </div>
         </div>
-
         <div class="row content">
             <div class="col-md-5" data-aos="fade-right">
-                <img src="{{ asset('assets/img/features-3.png') }}" class="img-fluid" alt="">
+                <img src="{{ $data3->imgfeature3 }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-7 pt-5" data-aos="fade-left">
-                <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-                <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe
-                    odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+                <h3>{{ $data3->titrefeature3 }}</h3>
+                <p>{{ $data3->descriptionfeature3 }}</p>
                 <ul>
-                    <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate
-                        velit.</li>
-                    <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.
-                    </li>
+                    <li><i class="bi bi-check"></i>{{ $data3->item1feature3 }}</li>
+                    <li><i class="bi bi-check"></i>{{ $data3->item2feature3 }}</li>
+                    <li><i class="bi bi-check"></i>{{ $data3->item3feature3 }}</li>
                 </ul>
             </div>
         </div>
-
         <div class="row content">
             <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-                <img src="{{ asset('assets/img/features-4.png') }}" class="img-fluid" alt="">
+                <img src="{{ $data3->imgfeature4 }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-                <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+                <h3>{{ $data3->titrefeature4 }}</h3>
                 <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore
-                    magna aliqua.
+                    {{ $data3->descriptionfeature4 }}
                 </p>
                 <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
+                    {{ $data3->textfeature4 }}
                 </p>
             </div>
         </div>
-
     </div>
-</section><!-- End Features Section -->
+</section>
+<!-- End Features Section -->

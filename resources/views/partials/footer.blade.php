@@ -71,4 +71,5 @@
             <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
     </div>
-</footer><!-- End Footer -->
+</footer>
+<!-- End Footer -->

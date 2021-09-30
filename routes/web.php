@@ -24,14 +24,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function(){
-    $data1 = Navbar::all();
-    $data2 = HomePage::all();
-    $data3 = Features::all();
-    $data4 = Portfolio::all();
-    $data5 = Team::all();
-    $data6 = Testimonials::all();
-    $data7 = Services::all();
-    $data8 = Contact::all();
+    $data1 = Navbar::first();
+    $data2 = HomePage::first();
+    $data3 = Features::first();
+    $data4 = Portfolio::first();
+    $data5 = Team::first();
+    $data6 = Testimonials::first();
+    $data7 = Services::first();
+    $data8 = Contact::first();
     $data9 = Footerz::first();
     
     return view('index', compact('data1','data2','data3','data4','data5','data6','data7','data8','data9'));
