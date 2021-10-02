@@ -39,7 +39,8 @@ class NavbarController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * 
+     * Display the specified resource
      *
      * @param  \App\Models\Navbar  $navbar
      * @return \Illuminate\Http\Response

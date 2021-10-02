@@ -19,7 +19,8 @@ class UserSeeder extends Seeder
         [
             "name" => "Lil Moulaga",
             "email" => "0xPurp@nasa.gov",
-            "password" => bcrypt('a')
+            "password" => bcrypt('a'),
+            "role_id" => 1
         ]
         ]);
     }
