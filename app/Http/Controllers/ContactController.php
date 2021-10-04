@@ -14,7 +14,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $contact = Contact::all();
+        return view('admin.pages.contact.all', compact('contact'));
     }
 
     /**
@@ -57,7 +58,7 @@ class ContactController extends Controller
      */
     public function edit(Contact $contact)
     {
-        //
+        return view('admin.pages.contact.all', compact('contact'))
     }
 
     /**
@@ -69,7 +70,33 @@ class ContactController extends Controller
      */
     public function update(Request $request, Contact $contact)
     {
-        //
+        $request->validate([
+            "titre" => "required",
+            "sous_titre" => "required",
+            "titreadresse" => "required",
+            "adresse" => "required",
+            "titremail" => "required",
+            "mail1" => "required",
+            "mail2" => "required",
+            "titrephone" => "required",
+            "phone1" => "required",
+            "phone2" => "required"
+        ]);
+
+        $contact->titre = $request->titre;
+        $contact->sous_titre = $request->sous_titre;
+        $contact->titreadresse = $request->titreadresse;
+        $contact->adresse = $request->adresse;
+        $contact->titremail = $request->titremail;
+        $contact->mail1 = $request->mail1;
+        $contact->mail2 = $request->mail2;
+        $contact->titrephone = $request->titrephone;
+        $contact->phone1 = $request->phone1;
+        $contact->phone2 = $request->phone2;
+
+        $contact->save();
+        return redirect()->route(contact.all)->with('message', 'Information modifiées avec succès');
+
     }
 
     /**

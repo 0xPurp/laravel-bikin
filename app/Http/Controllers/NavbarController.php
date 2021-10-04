@@ -14,7 +14,8 @@ class NavbarController extends Controller
      */
     public function index()
     {
-        //
+        $navbar = Navbar::all();
+        return view('admin.pages.navbar.all', compact('navbar'));
     }
 
     /**
@@ -58,7 +59,7 @@ class NavbarController extends Controller
      */
     public function edit(Navbar $navbar)
     {
-        //
+        return view('admin.pages.navbar.edit', compact('navbar'));
     }
 
     /**
@@ -70,7 +71,29 @@ class NavbarController extends Controller
      */
     public function update(Request $request, Navbar $navbar)
     {
-        //
+        $request->validate([
+            "nomsite" => "required",
+            "btnhome" => "required",
+            "btnabout" => "required",
+            "btnservices" => "required",
+            "btnportfolio" => "required",
+            "btnteam" => "required",
+            "btncontact" => "required",
+            "btngetstarted" => "required"
+        ]);
+
+        $navbar->nomsite = $request->nomsite;
+        $navbar->btnhome = $request->btnhome;
+        $navbar->btnabout = $request->btnabout;
+        $navbar->btnservices = $request->btnservices;
+        $navbar->btnportfolio = $request->btnportfolio;
+        $navbar->btnteam = $request->btnteam;
+        $navbar->btncontact = $request->btncontact;
+        $navbar->btngetstarted = $request->btngetstarted;
+
+        $navbar->save();
+        return redirect()->route('navbar.all')->with('message', 'l\'item as été modifié correctement.');
+
     }
 
     /**
