@@ -62,22 +62,10 @@ Route::resource('/footerz', FooterzController::class)->middleware('auth', 'admin
 
 
 
-// Route::get('/admin', function(){
-//     $data1 = Navbar::All();
-//     $data2 = HomePage::All();
-//     $data3 = Features::All();
-//     $data4 = Portfolio::All();
-//     $data5 = Team::All();
-//     $data6 = Testimonials::All();
-//     $data7 = Services::All();
-//     $data8 = Contact::All();
-//     $data9 = Footerz::All();
-
-//     return view('');
-// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+

@@ -58,7 +58,7 @@ class TeamController extends Controller
      */
     public function edit(Team $team)
     {
-        return view('admin.pages.team.edit', compact('team'))
+        return view('admin.pages.team.edit', compact('team'));
     }
 
     /**

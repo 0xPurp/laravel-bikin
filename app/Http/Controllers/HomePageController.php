@@ -15,7 +15,7 @@ class HomePageController extends Controller
     public function index()
     {
         $homePage = HomePage::all();
-        return view('admin.pages.homepage.all', compact('homePage'))
+        return view('admin.pages.homepage.all', compact('homePage'));
     }
 
     /**

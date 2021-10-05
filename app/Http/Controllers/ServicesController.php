@@ -95,7 +95,7 @@ class ServicesController extends Controller
         $services->descriptioncard4 = $request->descriptioncard4;
 
         $services->save();
-        return redirect()->route('services.all')->with('message', 'Informations modifié avec succès.');
+        return redirect()->route('services.index')->with('message', 'Informations modifié avec succès.');
 
 
     }
@@ -108,6 +108,7 @@ class ServicesController extends Controller
      */
     public function destroy(Services $services)
     {
-        //
+        $services->delete();
+        return redirect()->route('services.index');
     }
 }
